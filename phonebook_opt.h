@@ -2,11 +2,12 @@
 #define _PHONEBOOK_H
 
 #define MAX_LAST_NAME_SIZE 16
+
 #define MAX_NUM_OF_NAME    20
 /* TODO: After modifying the original version, uncomment the following
  * line to set OPT properly */
 #define OPT      1
-#define DEGREE   1024
+#define DEGREE   16
 
 
 typedef struct __ENTRY {
@@ -25,5 +26,6 @@ typedef struct __NODE {
 
 char *findName(char lastname[], bTreeNode *node, int ht);
 bTreeNode *append(char lastName[], bTreeNode *node, int *ht);
+
 
 #endif
